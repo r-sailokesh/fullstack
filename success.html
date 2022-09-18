@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="success.css" />
+    <script>
+      window.onload = function () {
+        const urlSearchParams = new URLSearchParams(window.location.search);
+        const params = Object.fromEntries(urlSearchParams.entries());
+        const header = document.getElementById("successheader");
+        header.innerHTML = `Successfully Logged In as ${params.username}`;
+      };
+    </script>
+  </head>
+  <body>
+    <div class="center">
+      <h1 id="successheader">A</h1>
+    </div>
+  </body>
+</html>
